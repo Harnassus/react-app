@@ -1,16 +1,22 @@
-import Info from './Info.js'
-import About from './About.js'
-import Interest from './Interests.js'
-import Footer from './Footer.js'
- 
+import Navbar from './Navbar.js'
+import Hero from './Hero.js'
+import Card from './Card.js'
+
  
     function App() {
       return (
         <div className="App">
-          <Info />
-          <About />
-          <Interest />
-          <Footer />
+          <Navbar />
+          <Hero />
+          <Card 
+            img='Katie.png'
+            icon= "Star 1.png"
+            rating='5.0'
+            review={(6)}
+            country='USA'
+            title='Life lessons with Katie Zaferes'
+            price ='From $136'
+          />
           </div>
       );
     }
