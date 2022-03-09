@@ -1,26 +1,24 @@
-
+import icon from './assets/Location-icon.png'
 
 const Card = (props) => {
-    let badgeText = '';
-    if (props.data.openSpots === 0) {
-        badgeText = 'SOLD OUT'
-    } else if (props.data.location === 'Online') {
-        badgeText = 'ONLINE'
-    }
+    
     return (     
         
         <section className='card'>
-            {badgeText && <div className="badge">{badgeText}</div>}
-            <img alt='Cover img' src={props.data.coverImg} className='card-image' />
-
-            <div className='card--stats'>
-                <img alt='star icon' src={props.icon} className='card--star' />
-                <span>{props.data.stats.rating}</span>
-                <span className='gray'>({props.data.stats.reviewCount}) &bull;</span>
-                <span className='gray'>{props.data.location}</span>
+            <img className="cover-img" src={props.imageUrl} alt='Location' />
+            
+            <div className='content'>
+                <img className='icon' src={icon} alt='Location icon' />
+                <span className='location'>{props.location}</span>
+                <a href={props.googleMapsUrl} className='gray'>View on Google Maps</a>
+                <h2>{props.title}</h2>
+                <div className='description'>
+                    <span className='bold'>{props.startDate} -</span>
+                    <span className='bold'>{props.endDate}</span>
+                    <p className='description'>{props.description}</p>
+                </div>
             </div>
-            <p className="card--title">{props.data.title}</p>
-            <p className="card--price"><span className='bold'>${props.data.price} </span>/ person</p>
+
         </section>
     )
 }
