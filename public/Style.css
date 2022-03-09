@@ -49,7 +49,7 @@ body{
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 20px;
-    padding: 30px;
+    padding-left: 40px;
 }
 .card{
     width: 175px;

@@ -13,7 +13,7 @@ const Card = (props) => {
                 <span className='gray'>{props.location}</span>
             </div>
             <p className="card--title">{props.title}</p>
-            <p className="card--price"><span className='bold'>{props.price} </span>/ person</p>
+            <p className="card--price"><span className='bold'>${props.price} </span>/ person</p>
         </section>
     )
 }
