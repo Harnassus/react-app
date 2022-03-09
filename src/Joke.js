@@ -1,6 +1,6 @@
 
 
-const Jokes = (props) => {
+const Joke = (props) => {
 
       if (props.punchline === undefined) {
           return <h3>{props.setup}</h3>
@@ -9,7 +9,7 @@ const Jokes = (props) => {
           return(
         <div className="container"  >
             <h3>Setup: {props.setup}</h3>
-                  <h4> {props.punchline}</h4>
+                  <h4> Punchline: {props.punchline}</h4>
                   
                   <hr></hr>
         </div>
@@ -18,4 +18,4 @@ const Jokes = (props) => {
     
 }
 
-export default Jokes;
+export default Joke;

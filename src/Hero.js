@@ -1,10 +1,10 @@
-import HeroImage from './image/Hero.png'
+
 
 const Hero = () => {
     return (
         <div className='hero'>
             
-                <img alt="hero" src={HeroImage} />
+                <img alt="hero" src={process.env.PUBLIC_URL + "/image/Hero.png"}className='heroimage'/>
             <h1>
                 Online Experiences
             </h1>

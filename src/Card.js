@@ -1,19 +1,20 @@
-import star from './image/Star 1.png'
+
 
 const Card = (props) => {
+    console.log(props);
     return (
         <section className='card'>
-            <img alt='Katie' src={`/Image/${props.img}`} className='card-image' />
-            <div className='card-stats'>
-                <img alt='star icon' src={star} className='stat-star' />
+            <img alt='Cover img' src={props.image} className='card-image' />
+
+            <div className='card--stats'>
+                <img alt='star icon' src={props.icon} className='card--star' />
                 <span>{props.rating}</span>
-                <span className='gray'>{props.review}</span>
-                <span className='gray'>{props.country}</span>
+                <span className='gray'>{props.reviewCount}</span>
+                <span className='gray'>{props.location}</span>
             </div>
-            <p >{props.title}</p>
-            <p><span className='bold'>{props.price} </span>/ person</p>
+            <p className="card--title">{props.title}</p>
+            <p className="card--price"><span className='bold'>{props.price} </span>/ person</p>
         </section>
     )
 }
-console.log(Card());
 export default Card;
