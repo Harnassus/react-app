@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    font-family: inter, sans-serif;
+    font-family: Inter, sans-serif;
     font-weight: 100;
     background-color: #ffffff;
 }
@@ -60,6 +60,9 @@ body{
 .gray  {
  color: #918E9B;
 
+}
+.gray:hover{
+    color: #2B283A;
 }
 .content > h2{
     margin-top: 5px;
